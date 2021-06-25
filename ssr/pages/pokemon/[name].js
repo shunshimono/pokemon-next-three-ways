@@ -8,7 +8,7 @@ const getPokemon = async (key, name) => {
   );
   return data;
 };
-
+//TODO
 export async function getServerSideProps(context) {
   const data = await getPokemon(null, context.params.name);
   return {
